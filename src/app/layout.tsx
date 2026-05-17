@@ -3,14 +3,16 @@ import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import { ThemeProvider } from "next-themes";
-import ScrollToTop from '@/components/ScrollToTop';
+import ScrollToTop from "@/components/ScrollToTop";
 import Aoscompo from "@/utils/aos";
-import NextTopLoader from 'nextjs-toploader';
+import NextTopLoader from "nextjs-toploader";
 import localFont from "next/font/local";
 
 // import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import { AuthDialogProvider } from "./context/AuthDialogContext";
+
 const inter = Inter({ subsets: ["latin"] });
+
 const vazir = localFont({
   src: [
     {
@@ -29,30 +31,28 @@ const vazir = localFont({
 
 export default function RootLayout({
   children,
-  session,
 }: Readonly<{
   children: React.ReactNode;
-  session:any
 }>) {
   return (
-    <html lang="fa"  suppressHydrationWarning>
+    <html lang="fa" suppressHydrationWarning>
       <body className={vazir.className}>
-      <NextTopLoader />
-      <AuthDialogProvider>
-      {/* <SessionProviderComp session={session}> */}
-        <ThemeProvider
-          attribute="class"
-          enableSystem={true}
-          defaultTheme="system"
-        >
-          <Aoscompo>
-            <Header />
-            {children}
-            <Footer />
-          </Aoscompo>
-          <ScrollToTop />
-        </ThemeProvider>
-        {/* </SessionProviderComp> */}
+        <NextTopLoader />
+
+        <AuthDialogProvider>
+          <ThemeProvider
+            attribute="class"
+            enableSystem={true}
+            defaultTheme="system"
+          >
+            <Aoscompo>
+              <Header />
+              {children}
+              <Footer />
+            </Aoscompo>
+
+            <ScrollToTop />
+          </ThemeProvider>
         </AuthDialogProvider>
       </body>
     </html>
