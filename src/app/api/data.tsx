@@ -88,7 +88,7 @@ export const Servicebox = [
 
 export const portfolioinfo = [
   {
-    image: getImgPath('/images/portfolio/academia.jpg'),
+    image: getImgPath('/images/portfolio/academia.webp'),
     alt: 'نمونه کار',
     title: 'آکادمی هایر',
     slug: 'academi',
@@ -112,7 +112,7 @@ export const portfolioinfo = [
     Class: 'md:mt-0',
   },
   {
-    image: getImgPath('/images/portfolio/payakam.jpg'),
+    image: getImgPath('/images/portfolio/payakam.webp'),
     alt: 'نمونه کار',
     title: ' پنل کاربری سایت پایاکام',
     slug: 'payakam',
@@ -120,7 +120,7 @@ export const portfolioinfo = [
     Class: 'md:mt-24',
   },
   {
-    image: getImgPath('/images/portfolio/deepchat_landing.jpg'),
+    image: getImgPath('/images/portfolio/deepchat_landing.webp'),
     alt: 'نمونه کار',
     title: 'لندینگ معرفی چت بات دیپ‌چت',
     slug: 'deepchat-landing',
@@ -128,7 +128,7 @@ export const portfolioinfo = [
     Class: 'md:mt-0',
   },
   {
-    image: getImgPath('/images/portfolio/deepchat_ai.jpg'),
+    image: getImgPath('/images/portfolio/deepchat_ai.webp'),
     alt: 'نمونه کار',
     title: 'جت بات هوش مصنوعی',
     slug: 'deepchat-ai',
@@ -136,7 +136,7 @@ export const portfolioinfo = [
     Class: 'md:mt-0',
   },
   {
-    image: getImgPath('/images/portfolio/etehad.jpg'),
+    image: getImgPath('/images/portfolio/etehad.webp'),
     alt: 'نمونه کار',
     title: 'اپلیکیشن قرآنی اتحاد',
     slug: 'etehad',
