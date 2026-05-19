@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section
       dir='rtl'
-      className='relative overflow-hidden bg-white pt-28 text-white dark:bg-darklight md:pt-44'>
+      className='relative overflow-hidden pt-28 text-white dark:bg-darklight md:pt-44'>
       
-      <div className='container relative z-10 mx-auto grid max-w-6xl grid-cols-12 gap-8 px-4'>
+      <div className='container  relative z-10 mx-auto grid max-w-6xl grid-cols-12 gap-8 px-4'>
 
         {/* متن */}
         <div
@@ -24,12 +24,12 @@ const Hero = () => {
             <span className='h-3 w-3 rounded-full bg-success'></span>
 
             <span className='text-sm font-medium text-midnight_text dark:text-white/50'>
-              طراحی و توسعه حرفه‌ای وب
+              طراحی و توسعه حرفه‌ای وب و اپلیکیشن
             </span>
           </div>
 
           {/* عنوان */}
-          <h1 className='text-4xl font-extrabold leading-tight text-midnight_text dark:text-white md:text-5xl md:leading-[1.2]'>
+          <h1 className='text-2xl font-bold leading-tight text-midnight_text dark:text-white md:text-3xl md:leading-[1.2]'>
             ساخت تجربه‌های دیجیتال مدرن و حرفه‌ای برای برند شما
           </h1>
 
@@ -103,7 +103,7 @@ const Hero = () => {
             height={500}
             quality={100}
             priority
-            className='mx-auto h-auto w-full object-contain'
+            className='mx-auto  object-contain'
           />
         </div>
       </div>
