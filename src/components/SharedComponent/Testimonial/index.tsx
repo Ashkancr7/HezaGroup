@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 }
 
 const Testimonial = () => {
-  // const breadcrumbLinks = [
-  //   { href: '/', text: 'خانه' },
-  //   { href: '/team', text: 'اعضای تیم' },
-  // ]
+  const breadcrumbLinks = [
+    
+    { href: '/team', text: '' },
+  ]
 
   const teamMembers = [
     {
@@ -64,11 +64,11 @@ const Testimonial = () => {
     <div dir='rtl' className='text-right dark:bg-darkmode'>
 
       {/* هدر */}
-      {/* <HeroSub
+      <HeroSub
         title='اعضای تیم'
         description='با اعضای حرفه‌ای و خلاق تیم ما آشنا شوید؛ افرادی متخصص که با تجربه و مهارت بالا بهترین پروژه‌ها را خلق می‌کنند.'
         breadcrumbLinks={breadcrumbLinks}
-      /> */}
+      />
 
       {/* لیست اعضا */}
       <section
@@ -86,13 +86,13 @@ const Testimonial = () => {
               <div className='w-[18rem] group'>
 
                 {/* تصویر */}
-                <div className='overflow-hidden rounded-2xl shadow-lg h-[360px]'>
+                <div className='overflow-hidden rounded-2xl shadow-lg h-[340px]'>
 
                   <Image
                     src={member.image}
                     alt={member.name}
-                    width={500}
-                    height={500}
+                    width={300}
+                    height={300}
                      className='w-full h-full object-cover transition-all duration-500 group-hover:scale-105'
                   />
 
