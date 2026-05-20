@@ -43,7 +43,7 @@ const Footer: FC = () => {
               />
             </Link>
 
-            <h2 className='mt-8 text-3xl font-extrabold leading-[60px]'>
+            <h2 className='mt-8 text-3xl font-bold leading-[60px]'>
               آینده کسب‌وکار خود را
               <span className='text-primary'> حرفه‌ای </span>
               بسازید

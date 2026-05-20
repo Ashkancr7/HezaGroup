@@ -29,7 +29,7 @@ const Contactform = () => {
             </div>
 
             {/* تیتر */}
-            <h2 className='py-12 text-[28px] font-bold leading-tight text-white sm:text-4xl'>
+            <h2 className='py-12 text-[18px] font-bold leading-tight text-white sm:text-2xl'>
               بیایید درباره پروژه شما صحبت کنیم و آن را به سطح بالاتری ببریم
             </h2>
 
