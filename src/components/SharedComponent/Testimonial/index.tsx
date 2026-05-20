@@ -17,38 +17,46 @@ const Testimonial = () => {
   const teamMembers = [
     {
       id: 1,
-      image: '/images/team/hero-image.png',
-      name: 'علی محمدی',
+      image: '/images/team/ashkan.webp',
+      name: 'اشکان اسدی',
       role: 'توسعه‌دهنده فرانت‌اند',
       description:
-        'متخصص React و Next.js با تجربه طراحی رابط کاربری مدرن',
+        'متخصص React و Next.js با تجربه طراحی رابط کاربری مدرن/سابقه کار +5',
     },
 
     {
       id: 2,
-      image: '/images/team/hero-profile-1.jpg',
-      name: 'محمد رضایی',
-      role: 'طراح UI/UX',
+      image: '/images/team/bakhtiar.webp',
+      name: "بختیار کمانگر",
+      role: 'بک‌اند دولوپر/laravel',
       description:
-        'طراحی رابط کاربری حرفه‌ای و تجربه کاربری خلاقانه',
+        'برنامه نویس بک اند / لاراول/سابقه کار +8',
     },
 
     {
       id: 3,
-      image: '/images/team/hero-profile-2.jpg',
-      name: 'سارا احمدی',
-      role: 'بک‌اند دولوپر',
+      image: '/images/team/mohamad.webp',
+      name: 'محمد کرمی',
+      role: 'بک‌اند دولوپر/laravel',
       description:
-        'توسعه API و معماری سمت سرور با Node.js',
+        'برنامه نویس بک‌اند/laravel /  سابقه کار +6'
     },
 
     {
       id: 4,
-      image: '/images/team/hero-profile-3.jpg',
-      name: 'محمد کریمی',
+      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Reza',
+      name: 'سید‌عرفان حسینی',
       role: 'دیجیتال مارکتر',
       description:
-        'متخصص سئو و استراتژی بازاریابی دیجیتال',
+        'متخصص سئو و استراتژی بازاریابی دیجیتال/سابقه کار+5',
+    },
+    {
+      id: 5,
+      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Reza',
+      name: 'شهریار زندکریمی',
+      role: 'بک‌‌اند دولوپر/پایتون',
+      description:
+        'برنامه نویس بک‌اند/پایتون و هوش مصنوعی/سابقه کار +1',
     },
   ]
 
@@ -78,15 +86,14 @@ const Testimonial = () => {
               <div className='w-[18rem] group'>
 
                 {/* تصویر */}
-                <div className='relative overflow-hidden rounded-2xl transition-all duration-500 group-hover:scale-[1.05] group-hover:cursor-pointer shadow-lg'>
+                <div className='overflow-hidden rounded-2xl shadow-lg h-[360px]'>
 
                   <Image
                     src={member.image}
                     alt={member.name}
-                    width={1200}
-                    height={800}
-                    style={{ width: '100%', height: 'auto' }}
-                    className='object-cover'
+                    width={500}
+                    height={500}
+                     className='w-full h-full object-cover transition-all duration-500 group-hover:scale-105'
                   />
 
                 </div>

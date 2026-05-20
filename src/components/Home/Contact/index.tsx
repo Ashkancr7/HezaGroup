@@ -60,7 +60,7 @@ const Contactform = () => {
             </div>
 
             {/* برندهای همکار */}
-            <div className='pt-12'>
+            {/* <div className='pt-12'>
 
               <p className='pb-4 text-base text-white/50'>
                 مورد اعتماد برندهای
@@ -101,7 +101,7 @@ const Contactform = () => {
                 />
 
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* فرم */}

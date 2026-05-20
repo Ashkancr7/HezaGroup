@@ -70,7 +70,7 @@ const Services = () => {
 
               {/* دکمه */}
               <Link
-                href='#'
+                href='/contact'
                 className='group flex items-center text-lg font-medium text-primary transition hover:text-blue-700'>
 
                 شروع کنید
