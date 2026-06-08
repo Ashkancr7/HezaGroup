@@ -94,7 +94,8 @@ const Hero = () => {
         </div>
 
         {/* تصویر */}
-        <div className="relative col-span-12 md:col-span-6 ">
+        <div className="relative col-span-12 md:col-span-6 flex justify-center">
+
 
           <Image
             src={getImgPath('/images/hero/hero-image.webp')}
