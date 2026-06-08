@@ -132,7 +132,7 @@ const Header: React.FC = () => {
           {/* ورود */}
           <Link
             href='#'
-            onClick={() => setIsSignInOpen(true)}
+            // onClick={() => setIsSignInOpen(true)}
             className='hidden lg:block rounded-xl border border-primary px-5 py-2 text-primary transition hover:bg-primary hover:text-white'>
             ورود
           </Link>
@@ -140,7 +140,7 @@ const Header: React.FC = () => {
           {/* ثبت نام */}
           <Link
             href='#'
-            onClick={() => setIsSignUpOpen(true)}
+            // onClick={() => setIsSignUpOpen(true)}
             className='hidden lg:block rounded-xl bg-primary px-5 py-2 text-white transition hover:bg-blue-700'>
             ثبت‌نام
           </Link>
@@ -232,20 +232,20 @@ const Header: React.FC = () => {
           <div className='mt-5 flex w-full flex-col gap-3'>
             <Link
               href='#'
-              onClick={() => {
-                setIsSignInOpen(true)
-                setNavbarOpen(false)
-              }}
+              // onClick={() => {
+              //   setIsSignInOpen(true)
+              //   setNavbarOpen(false)
+              // }}
               className='rounded-xl border border-primary px-4 py-3 text-center text-primary transition hover:bg-primary hover:text-white'>
               ورود
             </Link>
 
             <Link
               href='#'
-              onClick={() => {
-                setIsSignUpOpen(true)
-                setNavbarOpen(false)
-              }}
+              // onClick={() => {
+              //   setIsSignUpOpen(true)
+              //   setNavbarOpen(false)
+              // }}
               className='rounded-xl bg-primary px-4 py-3 text-center text-white transition hover:bg-blue-700'>
               ثبت‌نام
             </Link>

@@ -19,45 +19,36 @@ const PortfolioCard = () => {
     responsive: [
       {
         breakpoint: 1320,
-        settings: {
-          slidesToShow: 4,
-        },
+        settings: { slidesToShow: 4 },
       },
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-        },
+        settings: { slidesToShow: 4 },
       },
       {
         breakpoint: 992,
-        settings: {
-          slidesToShow: 3,
-        },
+        settings: { slidesToShow: 3 },
       },
       {
         breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-        },
+        settings: { slidesToShow: 2 },
       },
       {
         breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
+        settings: { slidesToShow: 1 },
       },
     ],
   }
 
   return (
+    console.log(portfolioinfo),
     <div id='portfolio' className='dark:bg-darkmode'>
       <div className='lg:px-9 m-auto px-0 max-w-[1600px] slider-container'>
         <Slider {...settings}>
           {portfolioinfo.map((item, index) => (
-            <Link key={index} href={`/portfolio/${item.slug}`} passHref>
-              <div
-                className={`px-3 group ${index % 2 !== 0 ? 'lg:mt-24 ' : ''}`}>
+            <Link key={item.slug} href={`/portfolio/${item.slug}`}>
+              {/* اینجا شرط index % 2 رو حذف کردم تا همه‌شون در یک تراز باشن */}
+              <div className='px-3 group'>
                 <div className='relative overflow-hidden rounded-lg'>
                   <Image
                     src={item.image}
@@ -68,7 +59,7 @@ const PortfolioCard = () => {
                     className='group-hover:scale-110 group-hover:cursor-pointer transition-all duration-500'
                   />
                 </div>
-                <h4 className='pb-1 pt-9 text-right group-hover:text-primary group-hover:cursor-pointer text-2xl text-midnight_text font-bold dark:text-white'>
+                <h4 className='pb-1 pt-9 text-right group-hover:text-primary group-hover:cursor-pointer text-xl text-midnight_text font-bold dark:text-white'>
                   {item.title}
                 </h4>
                 <p className='text-secondary text-right font-normal text-lg group-hover:text-primary group-hover:cursor-pointer dark:text-white/50'>

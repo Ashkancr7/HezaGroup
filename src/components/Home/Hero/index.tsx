@@ -52,7 +52,7 @@ const Hero = () => {
             <div className='flex items-center'>
 
               <Image
-                src={getImgPath('/images/hero/hero-profile-1.jpg')}
+                src={getImgPath('/images/hero/hero-profile-1.png')}
                 alt='user'
                 width={40}
                 height={40}
@@ -97,13 +97,13 @@ const Hero = () => {
         <div className="relative col-span-12 md:col-span-6 ">
 
           <Image
-            src={getImgPath('/images/hero/hero-image.png')}
+            src={getImgPath('/images/hero/hero-image.webp')}
             alt='hero-image'
             width={500}
             height={500}
             quality={100}
             priority
-            className='mx-auto  object-contain'
+            className='mx-auto  object-contain rounded-2xl'
           />
         </div>
       </div>

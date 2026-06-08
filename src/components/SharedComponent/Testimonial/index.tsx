@@ -80,7 +80,8 @@ const Testimonial = () => {
           {teamMembers.map((member) => (
             <Link
               key={member.id}
-              href={`/team/${member.id}`}
+              // href={`/team/${member.id}`}
+              href={'#'}
               passHref>
 
               <div className='w-[18rem] group'>

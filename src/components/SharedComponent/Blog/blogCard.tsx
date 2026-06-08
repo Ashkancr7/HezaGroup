@@ -12,7 +12,12 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
 
       {/* تصویر */}
       <div className='mb-8 overflow-hidden rounded-sm'>
-        <Link href={`/blog/${slug}`} aria-label='تصویر مقاله' className='block'>
+        <Link
+         // href={`/blog/${slug}`}
+          href={'#'}
+
+
+          aria-label='تصویر مقاله' className='block'>
 
           <Image
             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${coverImage}`}
