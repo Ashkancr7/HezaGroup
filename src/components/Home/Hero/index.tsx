@@ -94,19 +94,18 @@ const Hero = () => {
         </div>
 
         {/* تصویر */}
-        <div className="relative col-span-12 md:col-span-6 flex justify-center">
-
-
-          <Image
-            src={getImgPath('/images/hero/hero-image.webp')}
-            alt="hero-image"
-            width={500}
-            height={500}
-            quality={100}
-            priority
-            className="mx-auto w-full max-w-[500px] object-contain rounded-2xl"
-          />
-
+        <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end">
+          <div className="w-full max-w-[500px]">
+            <Image
+              src={getImgPath('/images/hero/hero-image.webp')}
+              alt="hero-image"
+              width={500}
+              height={500}
+              quality={100}
+              priority
+              className="block w-full h-auto object-contain rounded-2xl"
+            />
+          </div>
         </div>
       </div>
     </section>
