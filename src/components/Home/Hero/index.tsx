@@ -9,7 +9,7 @@ const Hero = () => {
     <section
       dir='rtl'
       className='relative overflow-hidden pt-28 text-white dark:bg-darklight md:pt-44'>
-      
+
       <div className='container  relative z-10 mx-auto grid max-w-6xl grid-cols-12 gap-8 px-4'>
 
         {/* متن */}
@@ -99,13 +99,14 @@ const Hero = () => {
 
           <Image
             src={getImgPath('/images/hero/hero-image.webp')}
-            alt='hero-image'
+            alt="hero-image"
             width={500}
             height={500}
             quality={100}
             priority
-            className='mx-auto  object-contain rounded-2xl'
+            className="mx-auto w-full max-w-[500px] object-contain rounded-2xl"
           />
+
         </div>
       </div>
     </section>
