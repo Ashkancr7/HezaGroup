@@ -29,7 +29,7 @@ const Services = () => {
 
         {/* تیتر اصلی */}
         <h2
-          className='mx-auto w-full pt-7 pb-20 text-start text-[28px] font-bold leading-tight text-midnight_text dark:text-white sm:text-4xl md:w-4/6 md:text-center'
+          className='mx-auto w-full pt-7 pb-20 text-center text-[28px] font-bold leading-tight text-midnight_text dark:text-white sm:text-4xl md:w-4/6 md:text-center'
           data-aos='fade-up'
           data-aos-delay='200'
           data-aos-duration='1000'>

@@ -44,7 +44,7 @@ const Testimonial = () => {
 
     {
       id: 4,
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Reza',
+      image: '/images/team/erfan.webp',
       name: 'سید‌عرفان حسینی',
       role: 'دیجیتال مارکتر',
       description:
@@ -52,7 +52,7 @@ const Testimonial = () => {
     },
     {
       id: 5,
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Reza',
+      image: '/images/team/shahriar.webp',
       name: 'شهریار زندکریمی',
       role: 'بک‌‌اند دولوپر/پایتون',
       description:
