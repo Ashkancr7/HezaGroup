@@ -88,10 +88,10 @@ export const Servicebox = [
 
 export const portfolioinfo = [
   {
-    image: getImgPath('/images/portfolio/academia.png'),
+    image: getImgPath('/images/portfolio/academia.webp'),
     img:'images/portfolio/academia.webp',
     gallery: [
-      getImgPath('/images/portfolio/academia.png'),
+      getImgPath('/images/portfolio/academia.webp'),
     ],
     alt: 'آکادمی هایر',
     title: 'Academiahire',
@@ -106,10 +106,10 @@ export const portfolioinfo = [
   },
 
   {
-    image: getImgPath('/images/portfolio/ananas.jpeg'),
-    img:'images/portfolio/ananas.jpeg',
+    image: getImgPath('/images/portfolio/ananas.webp'),
+    img:'images/portfolio/ananas.webp',
     gallery: [
-      getImgPath('/images/portfolio/ananas.jpeg'),
+      getImgPath('/images/portfolio/ananas.webp'),
     ],
     alt: 'آناناس',
     title: 'Ananas',
@@ -124,10 +124,10 @@ export const portfolioinfo = [
   },
 
   {
-    image: getImgPath('/images/portfolio/hidrolojy.png'),
+    image: getImgPath('/images/portfolio/hidrolojy.webp'),
     img:'images/portfolio/hidrolojy.webp',
     gallery: [
-      getImgPath('/images/portfolio/hidrolojy.png'),
+      getImgPath('/images/portfolio/hidrolojy.webp'),
     ],
     alt: 'کتاب حل المسائل هیدرولوژی',
     title: 'کتاب حل المسائل هیدرولوژی',
@@ -142,10 +142,10 @@ export const portfolioinfo = [
   },
 
   {
-    image: getImgPath('/images/portfolio/payakam.png'),
+    image: getImgPath('/images/portfolio/payakam.webp'),
     img:'images/portfolio/payakam.webp',
     gallery: [
-      getImgPath('/images/portfolio/payakam.png'),
+      getImgPath('/images/portfolio/payakam.webp'),
     ],
     alt: 'پنل کاربری پایاکام',
     title: 'پنل کاربری',
@@ -160,10 +160,10 @@ export const portfolioinfo = [
   },
 
   {
-    image: getImgPath('/images/portfolio/deepchat_landing.png'),
+    image: getImgPath('/images/portfolio/deepchat_landing.webp'),
     img:'images/portfolio/deepchat_landing.webp',
     gallery: [
-      getImgPath('/images/portfolio/deepchat_landing.png'),
+      getImgPath('/images/portfolio/deepchat_landing.webp'),
     ],
     alt: 'لندینگ دیپ‌چت',
     title: 'لندینگ معرفی چت بات دیپ‌چت',
@@ -177,29 +177,13 @@ export const portfolioinfo = [
     Class: 'md:mt-0',
   },
 
-  {
-    image: getImgPath('/images/portfolio/deepchat_ai.png'),
-    img:'images/portfolio/deepchat_ai.webp',
-    gallery: [
-      getImgPath('/images/portfolio/deepchat_ai.png'),
-    ],
-    alt: 'چت بات هوش مصنوعی DeepChat',
-    title: 'چت بات هوش مصنوعی',
-    slug: 'deepchat-ai',
-    info: 'چت بات هوش مصنوعی دستیار و پشتیبان سایت DeepChat',
-    description:
-      'طراحی و پیاده‌سازی رابط کاربری چت‌بات هوش مصنوعی DeepChat به‌عنوان دستیار هوشمند و پشتیبان آنلاین سایت.',
-    techStack: ['AI Chatbot', 'Next.js', 'UX Writing','React','WebSocket'],
-    liveUrl: 'deepchatai.ir',
-    githubUrl: '',
-    Class: 'md:mt-0',
-  },
+ 
 
   {
-    image: getImgPath('/images/portfolio/etehad.png'),
-    img:'images/portfolio/academia.webp',
+    image: getImgPath('/images/portfolio/etehad.webp'),
+    img:'images/portfolio/etehad.webp',
     gallery: [
-      getImgPath('/images/portfolio/etehad.png'),
+      getImgPath('/images/portfolio/etehad.webp'),
     ],
     alt: 'اپلیکیشن قرآنی اتحاد',
     title: 'اپلیکیشن قرآنی اتحاد',
@@ -211,5 +195,23 @@ export const portfolioinfo = [
     liveUrl: '',
     githubUrl: '',
     Class: 'md:mt-24',
+  },
+
+   {
+    image: getImgPath('/images/portfolio/deepchat_landing.webp'),
+    img:'images/portfolio/deepchat_landing.webp',
+    gallery: [
+      getImgPath('/images/portfolio/deepchat_landing.webp'),
+    ],
+    alt: 'چت بات هوش مصنوعی DeepChat',
+    title: 'چت بات هوش مصنوعی',
+    slug: 'deepchat-ai',
+    info: 'چت بات هوش مصنوعی دستیار و پشتیبان سایت DeepChat',
+    description:
+      'طراحی و پیاده‌سازی رابط کاربری چت‌بات هوش مصنوعی DeepChat به‌عنوان دستیار هوشمند و پشتیبان آنلاین سایت.',
+    techStack: ['AI Chatbot', 'Next.js', 'UX Writing','React','WebSocket'],
+    liveUrl: 'deepchatai.ir',
+    githubUrl: '',
+    Class: 'md:mt-0',
   },
 ]
