@@ -1,52 +1,61 @@
+'use client'
 import React from 'react'
-import PortfolioCard from '@/components/SharedComponent/portfollio/Portfolio-card'
+import Image from 'next/image'
+import Link from 'next/link'
+import { portfolioinfo } from '@/app/api/data'
 
-const Portfolio = () => {
+const PortfolioCard = () => {
   return (
-    <section
-      dir='rtl'
-      id='portfolio'
-      className='bg-white py-20 dark:bg-darkmode'>
+    <div dir='rtl' className='text-right dark:bg-darkmode'>
+      
+      {/* لیست نمونه کارها */}
+      <section id='portfolio' className='md:pb-24 pb-16 pt-8'>
+        
+        {/* کانتینر فلکس برای چیدمان کارت‌ها کنار هم */}
+        <div className='flex flex-wrap gap-[2.125rem] lg:px-[2.125rem] px-4 max-w-[120rem] w-full justify-center m-auto'>
+          
+          {portfolioinfo.map((item) => (
+            <Link
+              key={item.slug}
+              href={`/portfolio/${item.slug}`}
+              className='block'
+            >
+              <div className='w-[18rem] group'>
+                
+                {/* تصویر */}
+                <div className='overflow-hidden rounded-2xl shadow-lg h-[340px]'>
+                  <Image
+                    src={item.image}
+                    alt={item.alt || item.title}
+                    width={300}
+                    height={300}
+                    className='w-full h-full object-cover transition-all duration-500 group-hover:scale-105'
+                  />
+                </div>
 
-      <div className='px-8 text-center lg:px-0'>
+                {/* عنوان پروژه */}
+                <h4 className='pb-[0.3125rem] pt-[2.1875rem] text-2xl font-bold text-midnight_text transition-all duration-300 group-hover:text-primary dark:text-white'>
+                  {item.title}
+                </h4>
 
-        {/* عنوان کوچک */}
-        <div
-          className='flex items-center justify-center gap-2'
-          data-aos='fade-right'
-          data-aos-delay='200'
-          data-aos-duration='1000'>
+                {/* دسته بندی یا توضیح کوتاه (اختیاری - می‌تونی یه چیزی اضافه کنی) */}
+                {/* <p className='text-primary font-semibold text-lg'>
+                  دسته‌بندی پروژه
+                </p> */}
 
-          <span className='h-3 w-3 rounded-full bg-success'></span>
+                {/* توضیحات پروژه */}
+                <p className='pt-2 text-secondary text-base leading-7 transition-all duration-300 group-hover:text-primary dark:text-white/50'>
+                  {item.info}
+                </p>
 
-          <span className='text-sm font-medium text-midnight_text dark:text-white/50'>
-            نمونه‌کارها
-          </span>
+              </div>
+            </Link>
+          ))}
+          
         </div>
-
-        {/* تیتر */}
-        <h2
-          className='mx-auto w-full pt-7 pb-4 text-center text-[28px] font-bold leading-tight text-midnight_text dark:text-white sm:text-4xl md:w-4/6'
-          data-aos='fade-left'
-          data-aos-delay='200'
-          data-aos-duration='1000'>
-
-          بررسی مجموعه‌ای از بهترین پروژه‌های ما
-        </h2>
-
-        {/* توضیح */}
-        <div className='inline-flex pb-14'>
-          <p className='max-w-sm text-base font-normal leading-7 text-grey dark:text-white/60'>
-            مجموعه‌ای منتخب از بهترین پروژه‌ها که نشان‌دهنده تجربه و مهارت
-            من در حوزه‌های مختلف طراحی و توسعه است.
-          </p>
-        </div>
-      </div>
-
-      {/* کارت‌ها */}
-      <PortfolioCard />
-    </section>
+      </section>
+    </div>
   )
 }
 
-export default Portfolio
+export default PortfolioCard

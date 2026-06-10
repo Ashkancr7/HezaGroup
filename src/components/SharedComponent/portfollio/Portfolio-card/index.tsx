@@ -1,75 +1,59 @@
 'use client'
 import React from 'react'
-import Slider from 'react-slick'
 import Image from 'next/image'
 import Link from 'next/link'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 import { portfolioinfo } from '@/app/api/data'
 
 const PortfolioCard = () => {
-  const settings = {
-    autoplay: true,
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 100,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1320,
-        settings: { slidesToShow: 4 },
-      },
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 4 },
-      },
-      {
-        breakpoint: 992,
-        settings: { slidesToShow: 3 },
-      },
-      {
-        breakpoint: 600,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  }
-
   return (
-    console.log(portfolioinfo),
-    <div id='portfolio' className='dark:bg-darkmode'>
-      <div className='lg:px-9 m-auto px-0 max-w-[1600px] slider-container'>
-        <Slider {...settings}>
-          {portfolioinfo.map((item, index) => (
-            <Link key={item.slug} href={`/portfolio/${item.slug}`}>
-              {/* اینجا شرط index % 2 رو حذف کردم تا همه‌شون در یک تراز باشن */}
-              <div className='px-3 group'>
-                <div className='relative overflow-hidden rounded-lg'>
+    <div dir='rtl' className='text-right dark:bg-darkmode'>
+      
+      {/* لیست نمونه کارها */}
+      <section id='portfolio' className='md:pb-24 pb-16 pt-8'>
+        
+        {/* کانتینر فلکس برای چیدمان کارت‌ها کنار هم */}
+        <div className='flex flex-wrap gap-[2.125rem] lg:px-[2.125rem] px-4 max-w-[120rem] w-full justify-center m-auto'>
+          
+          {portfolioinfo.map((item) => (
+            <Link
+              key={item.slug}
+              href={`/portfolio/${item.slug}`}
+              className='block'
+            >
+              <div className='w-[18rem] group'>
+                
+                {/* تصویر */}
+                <div className='overflow-hidden rounded-2xl shadow-lg h-[340px]'>
                   <Image
                     src={item.image}
-                    alt={item.alt}
-                    width={1200}
-                    height={800}
-                    style={{ width: '100%', height: 'auto' }}
-                    className='group-hover:scale-110 group-hover:cursor-pointer transition-all duration-500'
+                    alt={item.alt || item.title}
+                    width={300}
+                    height={300}
+                    className='w-full h-full object-cover transition-all duration-500 group-hover:scale-105'
                   />
                 </div>
-                <h4 className='pb-1 pt-9 text-right group-hover:text-primary group-hover:cursor-pointer text-xl text-midnight_text font-bold dark:text-white'>
+
+                {/* عنوان پروژه */}
+                <h4 className='pb-[0.3125rem] pt-[2.1875rem] text-2xl font-bold text-midnight_text transition-all duration-300 group-hover:text-primary dark:text-white'>
                   {item.title}
                 </h4>
-                <p className='text-secondary text-right font-normal text-lg group-hover:text-primary group-hover:cursor-pointer dark:text-white/50'>
+
+                {/* دسته بندی یا توضیح کوتاه (اختیاری - می‌تونی یه چیزی اضافه کنی) */}
+                {/* <p className='text-primary font-semibold text-lg'>
+                  دسته‌بندی پروژه
+                </p> */}
+
+                {/* توضیحات پروژه */}
+                <p className='pt-2 text-secondary text-base leading-7 transition-all duration-300 group-hover:text-primary dark:text-white/50'>
                   {item.info}
                 </p>
+
               </div>
             </Link>
           ))}
-        </Slider>
-      </div>
+          
+        </div>
+      </section>
     </div>
   )
 }
